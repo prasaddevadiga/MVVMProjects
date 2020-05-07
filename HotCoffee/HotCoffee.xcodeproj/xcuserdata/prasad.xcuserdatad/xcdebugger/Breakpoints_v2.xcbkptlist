@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9F5A4063-0218-4D4E-A84C-D31384326253"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4F142438-B007-41BD-BA6C-AE07FF5CF3D9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HotCoffee/Services/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "load(resource:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4F142438-B007-41BD-BA6C-AE07FF5CF3D9 - bd9bb1e718cf73b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HotCoffee.WebService.load&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(resource: HotCoffee.Resource&lt;A&gt;, completion: (Swift.Result&lt;A, HotCoffee.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "HotCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Acadamic/Learning/Swift/MVVM/HotCoffee/HotCoffee/Services/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "645">
+               </Location>
+               <Location
+                  uuid = "4F142438-B007-41BD-BA6C-AE07FF5CF3D9 - 5b6b1059e6795fe1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HotCoffee.WebService.load&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(resource: HotCoffee.Resource&lt;A&gt;, completion: (Swift.Result&lt;A, HotCoffee.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "HotCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Acadamic/Learning/Swift/MVVM/HotCoffee/HotCoffee/Services/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "161">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "652AF32E-D01A-45BB-B620-193598F9B53D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HotCoffee/Services/WebService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "load(resource:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "652AF32E-D01A-45BB-B620-193598F9B53D - bd9bb1e718cf73b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HotCoffee.WebService.load&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(resource: HotCoffee.Resource&lt;A&gt;, completion: (Swift.Result&lt;A, HotCoffee.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "HotCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Acadamic/Learning/Swift/MVVM/HotCoffee/HotCoffee/Services/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "1388">
+               </Location>
+               <Location
+                  uuid = "652AF32E-D01A-45BB-B620-193598F9B53D - ce66538cb0e5e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in HotCoffee.WebService.load&lt;A where A: Swift.Decodable, A: Swift.Encodable&gt;(resource: HotCoffee.Resource&lt;A&gt;, completion: (Swift.Result&lt;A, HotCoffee.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "HotCoffee"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Acadamic/Learning/Swift/MVVM/HotCoffee/HotCoffee/Services/WebService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "112">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
