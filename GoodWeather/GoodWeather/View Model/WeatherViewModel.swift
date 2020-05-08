@@ -8,24 +8,63 @@
 
 import Foundation
 
-struct WeatherViewModel: Codable {
-    var name: String
-    var main: TemperatureViewModel
+// type erasor technique
+
+class Dynamic<T>: Decodable where T: Decodable {
+    typealias Listener = (T) -> ()
+    var listener: Listener?
     
-//    private enum CodinKeys: String, CodingKey {
-//        case name
-//        case currentTemperature = "main"
-//    }
+    var value: T {
+        didSet {
+            listener?(value)
+        }
+    }
+    
+    func bind(listener: @escaping Listener)  {
+        self.listener = listener
+        self.listener?(value)
+    }
+    
+    init(_ value: T) {
+        self.value = value
+    }
+    
+    private enum CodingKeys: CodingKey {
+        case value
+    }
 }
 
-struct TemperatureViewModel: Codable {
-    var temp: Double
-    var temp_min: Double
-    var temp_max: Double
+struct WeatherViewModel: Decodable {
+    var name: Dynamic<String>
+    var main: TemperatureViewModel
     
-//    private enum CodinKeys: String, CodingKey {
-//        case temperature = "temp"
-//        case temperatureMin = "temp_min"
-//        case temperatureMax = "temp_max"
-//    }
+    private enum CodinKeys: String, CodingKey {
+        case name
+        case main
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodinKeys.self)
+        name = Dynamic(try container.decode(String.self, forKey: .name))
+        main = try container.decode(TemperatureViewModel.self, forKey: .main)
+    }
+}
+
+struct TemperatureViewModel: Decodable {
+    var temp: Dynamic<Double>
+    var temp_min: Dynamic<Double>
+    var temp_max: Dynamic<Double>
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodinKeys.self)
+        temp = Dynamic(try container.decode(Double.self, forKey: .temp))
+        temp_min = Dynamic(try container.decode(Double.self, forKey: .temp_min))
+        temp_max = Dynamic(try container.decode(Double.self, forKey: .temp_max))
+    }
+    
+    private enum CodinKeys: String, CodingKey {
+        case temp
+        case temp_min
+        case temp_max
+    }
 }

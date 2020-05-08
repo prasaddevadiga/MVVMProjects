@@ -14,7 +14,7 @@ class WeatherCell: UITableViewCell {
     @IBOutlet weak var temperatureLabel: UILabel!
 
     func confugure(_ vm: WeatherViewModel) {
-        cityLabel.text = vm.name
-        temperatureLabel.text = vm.main.temp.formatAsDegree
+        cityLabel.text = vm.name.value
+        temperatureLabel.text = vm.main.temp.value.formatAsDegree
     }
 }
