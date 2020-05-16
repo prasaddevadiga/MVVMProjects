@@ -14,18 +14,22 @@ struct FriendViewModel {
 
 extension FriendViewModel {
     var firstName: String {
-        friend.firstname ?? ""
+        return friend.firstname ?? ""
     }
     
     var idNumber: Int {
-        friend.id ?? 0
+        return friend.id ?? 0
     }
     
     var lastname: String {
         friend.lastname ?? ""
     }
     
+    var fullName: String {
+        return firstName + " " + lastname
+    }
+    
     var phonenumber: String {
-        friend.phonenumber ?? ""
+        return friend.phonenumber ?? ""
     }
 }

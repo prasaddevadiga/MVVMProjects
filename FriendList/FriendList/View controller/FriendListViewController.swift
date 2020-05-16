@@ -14,6 +14,7 @@ class FriendListViewController: UIViewController {
     @IBOutlet weak var friendListTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
         friendListVM.loadFriends { [weak self] completed in
             self?.friendListTableView.reloadData()
         }
@@ -26,9 +27,12 @@ extension FriendListViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath) as? FriendCell else {
+            return UITableViewCell()
+        }
         let vm = friendListVM.friend(at: indexPath.row)
-        cell.textLabel?.text = vm?.firstName
+        cell.fullNameLabel.text = vm?.fullName
+        cell.phoneNumberLabel.text = vm?.phonenumber
         return cell
     }
 }

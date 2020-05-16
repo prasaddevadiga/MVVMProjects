@@ -17,6 +17,7 @@
 		22B52613247052D800572291 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B52612247052D800572291 /* WebService.swift */; };
 		22B526152470593500572291 /* FriendViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B526142470593500572291 /* FriendViewModel.swift */; };
 		22B52617247059B300572291 /* FriendListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B52616247059B300572291 /* FriendListViewModel.swift */; };
+		22B5261A247069BE00572291 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B52619247069BE00572291 /* FriendCell.swift */; };
 		B04D086C8E4DC9AC620FF144 /* Pods_FriendList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF87AB18C4D53CED93BA55F /* Pods_FriendList.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		22B52612247052D800572291 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		22B526142470593500572291 /* FriendViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewModel.swift; sourceTree = "<group>"; };
 		22B52616247059B300572291 /* FriendListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewModel.swift; sourceTree = "<group>"; };
+		22B52619247069BE00572291 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		5CF87AB18C4D53CED93BA55F /* Pods_FriendList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EADA10E5482825D15744A4E /* Pods-FriendList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendList.release.xcconfig"; path = "Target Support Files/Pods-FriendList/Pods-FriendList.release.xcconfig"; sourceTree = "<group>"; };
 		91170278E39AB18C66E54378 /* Pods-FriendList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendList.debug.xcconfig"; path = "Target Support Files/Pods-FriendList/Pods-FriendList.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		22B525F724703FF900572291 /* FriendList */ = {
 			isa = PBXGroup;
 			children = (
+				22B526182470699800572291 /* Table cell */,
 				22B5260F247048E000572291 /* Service */,
 				22B5260E247048D800572291 /* View models */,
 				22B5260D247048D100572291 /* Models */,
@@ -116,6 +119,14 @@
 				22B52612247052D800572291 /* WebService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		22B526182470699800572291 /* Table cell */ = {
+			isa = PBXGroup;
+			children = (
+				22B52619247069BE00572291 /* FriendCell.swift */,
+			);
+			path = "Table cell";
 			sourceTree = "<group>";
 		};
 		C68E4AB4DC38212C432C3B7B /* Pods */ = {
@@ -253,6 +264,7 @@
 				22B525FD24703FF900572291 /* FriendListViewController.swift in Sources */,
 				22B52613247052D800572291 /* WebService.swift in Sources */,
 				22B526152470593500572291 /* FriendViewModel.swift in Sources */,
+				22B5261A247069BE00572291 /* FriendCell.swift in Sources */,
 				22B52617247059B300572291 /* FriendListViewModel.swift in Sources */,
 				22B525F924703FF900572291 /* AppDelegate.swift in Sources */,
 				22B525FB24703FF900572291 /* SceneDelegate.swift in Sources */,

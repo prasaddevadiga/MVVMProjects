@@ -19,13 +19,42 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendCell" rowHeight="69" id="QUs-HS-cZ3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="friendCell" rowHeight="69" id="QUs-HS-cZ3" customClass="FriendCell" customModule="FriendList" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QUs-HS-cZ3" id="NrP-uJ-0qr">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-yQ-wTA">
+                                                    <rect key="frame" x="16" y="8" width="382" height="53"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u51-s7-Ejw">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UX-po-NKO">
+                                                            <rect key="frame" x="0.0" y="24.5" width="382" height="28.5"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bMk-yQ-wTA" firstAttribute="leading" secondItem="NrP-uJ-0qr" secondAttribute="leading" constant="16" id="1Ek-0E-8AH"/>
+                                                <constraint firstAttribute="bottom" secondItem="bMk-yQ-wTA" secondAttribute="bottom" constant="8" id="D75-SF-WNp"/>
+                                                <constraint firstItem="bMk-yQ-wTA" firstAttribute="top" secondItem="NrP-uJ-0qr" secondAttribute="top" constant="8" id="O0H-Pb-ntk"/>
+                                                <constraint firstAttribute="trailing" secondItem="bMk-yQ-wTA" secondAttribute="trailing" constant="16" id="fSf-2C-rxl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fullNameLabel" destination="u51-s7-Ejw" id="cJG-5b-EsF"/>
+                                            <outlet property="phoneNumberLabel" destination="2UX-po-NKO" id="mbd-A9-cXL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
