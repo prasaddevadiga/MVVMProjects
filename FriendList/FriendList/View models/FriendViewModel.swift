@@ -9,7 +9,11 @@
 import Foundation
 
 struct FriendViewModel {
-    var friend: Friend
+    private var friend: Friend
+    
+    init(friend: Friend) {
+        self.friend = friend
+    }
 }
 
 extension FriendViewModel {
